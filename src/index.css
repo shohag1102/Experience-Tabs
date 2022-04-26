@@ -58,15 +58,16 @@ h2::after {
   cursor: pointer;
   letter-spacing: 1px;
 }
-.name-section > h3:first-child{
+/* .name-section > h3{
   color: #2CAEBA;
   border-left: 3px solid #2CAEBA;
-}
+} */
 .name-section > h3:hover{
   color: #2CAEBA;
   border-left: 3px solid #2CAEBA;
   transition: all ease .2s;
 }
+
 /*  */
 
 
@@ -98,8 +99,8 @@ h2::after {
 }
 .experience{
   /* background-color: lightsalmon; */
-  width: 85%;
-  margin-bottom: 50px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 .experience p > span{
   margin-right: 30px;
@@ -131,7 +132,7 @@ i{
   display:grid;
   place-items: center; 
 }
-button {
+button  {
   color: rgba(255, 255, 255, 0.718);
   background-color: #2CAEBA;
   border: none;

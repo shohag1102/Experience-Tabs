@@ -1,37 +1,19 @@
-function Experience() {
+import Duties from "./Duties"
+
+
+function Experience({dutyListArr, title, dates, company}) {
   return (
     <div className="desc-section">
-        <h3>Full Stack Web Developer</h3>
-        <h4>TOMMY</h4>
-        <p>December 2015 - Present</p>
+        <h3>{title}</h3>
+        <h4>{company}</h4>
+        <p>{dates}</p>
         <div className="experience">
             <div className="text">
-                <p>
-                <span><i className="fa-solid fa-angles-right"></i></span>
-                </p>
-                <p>
-                Tote bag sartorial mlkshk air plant vinyl banjo lumbersexual poke leggings offal cold-pressed brunch neutra. Hammock photo booth live-edge disrupt.
-                </p>
-            </div>
-            <div className="text">
-                <p>
-                <span><i className="fa-solid fa-angles-right"></i></span>
-                </p>
-                <p>
-                Tote bag sartorial mlkshk air plant vinyl banjo lumbersexual poke leggings offal cold-pressed brunch neutra. Hammock photo booth live-edge disrupt.
-                </p>
-            </div>
-            <div className="text">
-                <p>
-                <span><i className="fa-solid fa-angles-right"></i></span>
-                </p>
-                <p>
-                Tote bag sartorial mlkshk air plant vinyl banjo lumbersexual poke leggings offal cold-pressed brunch neutra. Hammock photo booth live-edge disrupt.
-                </p>
+                <Duties dutyListArr={dutyListArr}/>
             </div>
         </div>
     <div className="button-div">
-      <button>MORE INFO</button>
+      <button >MORE INFO</button>
     </div>
   </div>
   )

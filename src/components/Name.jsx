@@ -1,8 +1,12 @@
 
 function Name({name, namKi}) {
+    
   return (
     <>
-      <h3 onClick={()=>namKi(name)}>{name}</h3>
+      <h3
+       onClick={()=>namKi(name)}
+        className={name? {name} : ''}
+      >{name}</h3>
     </>
   )
 }
